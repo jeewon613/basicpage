@@ -1,5 +1,6 @@
 /*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
 body {
+  background-color: yellow;
   color: #444;
   font-size: 16px;
   font-family: 'Gentium Book Basic', serif;
@@ -8,30 +9,30 @@ p {
   margin-bottom: .67em;
 }
 nav, footer {
-  background-color: #444;
+  background-color: purple;
 }
 footer {
   text-align: center;
   padding: 1em 0 .3em 0;
-  color: #D0D0D0;
+  color: yellow;
 }
 /*-- Main Menu Styles--*/
 nav ul {
   list-style: none;
   padding: 1em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 nav a:link, nav a:visited {
-  color: #D0D0D0;
+  color: yellow;
   text-decoration: none;
 }
 nav a:hover, nav a:active  {
-  color: #F0F0F0;
+  color: yellow;
   text-decoration: underline;
 }
 nav a.active {
-  color: #F0F0F0;
+  color: yellow;
 }
 /*-- Hero Unit Styles--*/
 header {
@@ -40,6 +41,7 @@ header {
   width: 510px;
   margin-top: 2em;
   margin-bottom: 2em;
+  background-color: pink;
 }
 header img {
   width: 100%;
@@ -56,7 +58,8 @@ header h1 {
   margin-top: 1em;
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 900-weight;
+  color: gray;
+  font-weight: 900;
   font-style: 'Lato font', sans-serif;
 }
 /*-- Article Styles--*/
@@ -66,6 +69,7 @@ article {
   width: 768px;
   font-size: 18px;
   line-height: 1.3;
+  color: purple;
 }
 article figure {
   float: right;
@@ -78,25 +82,31 @@ article figcaption {
   font-style: italic;
 }
 .pagination {
-  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+	margin-right: auto;
   width: 96%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  color: yellow;
 }
 a.button {
-  border: 1px solid #888;
+  border: 1px solid pink;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 80%;
+  color: yellow;
+  background-color: purple
+
 }
 a.button:hover, a.button:active {
-  border: 1px solid #444;
-  text-decoration: none;
-  color: #222;
+  border: 1px solid yellow;
+  text-decoration: none
+  color: yellow;
 }
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {

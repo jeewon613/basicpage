@@ -83,6 +83,11 @@ article {
   padding-right: 8px;
   padding-left: 3px;
 }
+p.first {
+  color: #903;
+  font-style: oblique;
+  font-size: 20px;
+}
 
 article figure {
   float: right;
